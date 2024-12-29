@@ -5,7 +5,6 @@ set $down j
 set $up k
 set $right l
 set $term termite
-set $menu wmenu-run
 
 output * bg /home/hubbabubba3000/Pictures/wp.png fill
 output eDP1 pos 0 0 res 1920x1024
@@ -53,9 +52,6 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 	bindsym $mod+Escape exec "$term -e htop"
 	#search apps 
 	bindsym Alt+Space exec "wofi --show=drun,run"
-	#browser
-	bindsym Ctrl+b exec "cd ~/Downloads/waterfox && ./waterfox"
-	bindsym Ctrl+Shift+b exec "cd ~/Downloads/waterfox && ./waterfox --private-window"
 	#bindsym $mod+Escape exec htop
 	#file manager
 	bindsym $mod+e exec pcmanfm-qt
